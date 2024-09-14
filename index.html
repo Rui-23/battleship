@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Battleship</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Battleship</h1>
+  <div class="start-board">
+    <p>
+      <span>💁🏻‍♀️</span> vs <span>🤖</span>
+    </p>
+    <p>
+      <button id="js-play-btn">Play</button>
+    </p>
+  </div>
+
+  <div class="results-board">
+    <p class="results">Congratulations! You win!</p>
+    <p>
+      <button id="js-replay-btn">Replay</button>
+    </p>
+  </div>
+
+  <div class="gameboards">
+    <div class="battleground">
+      <div>
+        <p>Player's Board</p>
+        <div class="playerBoard"></div>
+      </div>
+      <div>
+        <p>Computer's Board ( Player's View )</p>
+        <div class="playerView"></div>
+      </div>
+    </div>
+
+    <div class="battleground">
+      <div>
+        <p>Computer's Board</p>
+        <div class="computerBoard"></div>
+      </div>
+      <div>
+        <p>Player's Board ( Computer's View )</p>
+        <div class="computerView"></div>
+      </div>
+    </div>
+  </div>
+  <audio src="sounds/futuristic-gun-shot-sci-fi.mp3" id="gunshot-sound"></audio>
+  <audio src="sounds/oops.mp3" id="miss-sound"></audio>
+  <script src="main.js" type="module"></script>
+</body>
+</html>
